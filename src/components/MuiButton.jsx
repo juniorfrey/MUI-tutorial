@@ -10,7 +10,6 @@ const MuiButton = () => {
     const [formats, setFormats] = useState([]);
     const handleFormatChange = (e,newSelectedValues) =>{
         setFormats(newSelectedValues);
-        //console.log(formats)
     }
 
     useEffect(() => {
@@ -70,7 +69,10 @@ const MuiButton = () => {
             </ButtonGroup>
         </Stack>
         <Stack direction='row'>
-            <ToggleButtonGroup arial-label='text formatting' value={formats} onChange={handleFormatChange}>
+            <ToggleButtonGroup arial-label='text formatting' 
+                value={formats}
+                exclusive
+                onChange={handleFormatChange}>
                 <ToggleButton value='bold' arial-label='bold'><FormatBoldIcon /></ToggleButton>
                 <ToggleButton value='italic' arial-label='italic'><FormatItalicIcon /></ToggleButton>
                 <ToggleButton value='underlined' arial-label='underlined'><FormatUnderlineIcon /></ToggleButton>
