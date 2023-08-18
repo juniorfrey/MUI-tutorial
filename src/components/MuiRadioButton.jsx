@@ -4,14 +4,24 @@ import {Box, FormControl, FormLabel, FormControlLabel, RadioGroup, Radio, FormHe
 export const MuiRadioButton = () => {
 
     const [value, setValue] = useState('');
+    const [error, setError] = useState(false);
     console.log(value)
     const handleChange = (event) => {
         setValue(event.target.value);
     };
 
+    const handleSubmit = () => {
+        if (!value) {
+            setError(true); // Show error if no value is selected when submitting
+        } else {
+            setError(false); // Reset error if a value is selected
+            // Perform any further actions here
+        }
+    };
+
   return (
     <Box width='250px'>
-        <FormControl error>
+        <FormControl error={error}>
             <FormLabel id='job-experience-group-label'>
                 Años de Experiencia
             </FormLabel>
@@ -26,6 +36,7 @@ export const MuiRadioButton = () => {
             </RadioGroup>
             <FormHelperText>Seleccion Invalida</FormHelperText>
         </FormControl>
+        <button onClick={handleSubmit}>Submit</button>
     </Box>
   )
 }
