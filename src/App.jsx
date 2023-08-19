@@ -1,4 +1,5 @@
 import './App.css'
+import { MuiAutocomplete } from './components/MuiAutocomplete'
 import MuiButton from './components/MuiButton'
 import { MuiCheckbox } from './components/MuiCheckbox'
 import { MuiRadioButton } from './components/MuiRadioButton'
@@ -36,6 +37,9 @@ function App() {
          <hr />
          <h5>RAITING</h5>
          <MuiRaiting />
+         <hr />
+         <h5>AUTOCOMPLETE</h5>
+         <MuiAutocomplete />
       </div>
     </>
   )
