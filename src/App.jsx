@@ -1,5 +1,6 @@
 import './App.css'
 import MuiButton from './components/MuiButton'
+import { MuiCheckbox } from './components/MuiCheckbox'
 import { MuiRadioButton } from './components/MuiRadioButton'
 import MuiSelect from './components/MuiSelect'
 import MuiTextField from './components/MuiTextField'
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='App'>
         <h5>TYPHOGRAPHY</h5>
          <MuiTypography />
          <hr />
@@ -24,6 +25,9 @@ function App() {
          <hr />
          <h5>RADIO BUTTON</h5>
          <MuiRadioButton />
+         <hr />
+         <h5>CHECKBOX</h5>
+         <MuiCheckbox />
       </div>
     </>
   )
