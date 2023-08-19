@@ -2,6 +2,7 @@ import './App.css'
 import MuiButton from './components/MuiButton'
 import { MuiCheckbox } from './components/MuiCheckbox'
 import { MuiRadioButton } from './components/MuiRadioButton'
+import { MuiRaiting } from './components/MuiRaiting'
 import MuiSelect from './components/MuiSelect'
 import { MuiSwitch } from './components/MuiSwitch'
 import MuiTextField from './components/MuiTextField'
@@ -32,6 +33,9 @@ function App() {
          <hr />
          <h5>SWITCH</h5>
          <MuiSwitch />
+         <hr />
+         <h5>RAITING</h5>
+         <MuiRaiting />
       </div>
     </>
   )
