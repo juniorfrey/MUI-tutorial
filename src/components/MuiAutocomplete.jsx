@@ -15,7 +15,7 @@ export const MuiAutocomplete = () => {
     const [value, setValue] = useState(null);
     const [skill, setSkill] = useState(null);
     console.log({skill})
-    console.log(skill.id, skill.label);
+    /* console.log(skill.id, skill.label); */
 
    /*  const handleChange = (e, newValue) => {
         setValue(newValue);
@@ -33,7 +33,7 @@ export const MuiAutocomplete = () => {
                       value={skill}
                       onChange={(event, skill) => setSkill(skill)}
                       freeSolo />
-        <div>Seleccionó : {skill.label}</div>
+        {/* <div>Seleccionó : {skill.label}</div> */}
     </Stack>
   )
 }
