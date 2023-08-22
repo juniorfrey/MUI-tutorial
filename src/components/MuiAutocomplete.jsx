@@ -16,6 +16,7 @@ export const MuiAutocomplete = () => {
     const [skill, setSkill] = useState(null);
     console.log({skill})
     //console.log(skill.id, skill.label);
+    /* console.log(skill.id, skill.label); */
 
    /*  const handleChange = (e, newValue) => {
         setValue(newValue);
