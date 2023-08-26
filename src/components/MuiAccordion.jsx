@@ -12,7 +12,8 @@ const handleChange = (isExpanded, panel) => {
 
   return (
     <div>
-        <Accordion expanded={expanded === 'panel1'} onChange={(e, isExpanded) => handleChange(isExpanded, 'panel1') }>
+        <Accordion expanded={expanded === 'panel1'} 
+                    onChange={(e, isExpanded) => handleChange(isExpanded, 'panel1') }>
             <AccordionSummary id='panel1-header' aria-controls='panel1-content' 
                             expandIcon={<ExpandMoreIcon/>}>
                 <Typography>Accordion 1</Typography>
@@ -24,7 +25,8 @@ const handleChange = (isExpanded, panel) => {
             </AccordionDetails>
         </Accordion>
 
-        <Accordion expanded={expanded === 'panel2'} onChange={(e, isExpanded) => handleChange(isExpanded, 'panel2') }>
+        <Accordion expanded={expanded === 'panel2'} 
+                    onChange={(e, isExpanded) => handleChange(isExpanded, 'panel2') }>
             <AccordionSummary id='panel2-header' aria-controls='panel2-content' 
                             expandIcon={<ExpandMoreIcon/>}>
                 <Typography>Accordion 2</Typography>
