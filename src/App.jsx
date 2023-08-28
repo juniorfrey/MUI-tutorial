@@ -4,6 +4,7 @@ import { MuiAutocomplete } from './components/MuiAutocomplete'
 import MuiButton from './components/MuiButton'
 import { MuiCard } from './components/MuiCard'
 import { MuiCheckbox } from './components/MuiCheckbox'
+import { MuiImageList } from './components/MuiImageList'
 import { MuiLayout } from './components/MuiLayout'
 import { MuiRadioButton } from './components/MuiRadioButton'
 import { MuiRaiting } from './components/MuiRaiting'
@@ -52,6 +53,9 @@ function App() {
          <hr />
          <h5>Accordion</h5>
          <MuiAccordion />
+         <hr />
+         <h5>IMAGENLIST</h5>
+         <MuiImageList />
       </div>
     </>
   )
