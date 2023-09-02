@@ -6,6 +6,7 @@ import { MuiCard } from './components/MuiCard'
 import { MuiCheckbox } from './components/MuiCheckbox'
 import { MuiImageList } from './components/MuiImageList'
 import { MuiLayout } from './components/MuiLayout'
+import { MuiNavbar } from './components/MuiNavbar'
 import { MuiRadioButton } from './components/MuiRadioButton'
 import { MuiRaiting } from './components/MuiRaiting'
 import MuiSelect from './components/MuiSelect'
@@ -17,8 +18,8 @@ function App() {
 
   return (
     <>
-      <div className='App'>
-        <h5>TYPHOGRAPHY</h5>
+      
+        {/* <h5>TYPHOGRAPHY</h5>
          <MuiTypography />
          <hr />
          <h5>BUTTONS</h5>
@@ -56,7 +57,10 @@ function App() {
          <hr />
          <h5>IMAGENLIST</h5>
          <MuiImageList />
-      </div>
+         <hr />
+         <h5>NABVAR</h5> */}
+         <MuiNavbar />
+      
     </>
   )
 }
