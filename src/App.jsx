@@ -6,6 +6,7 @@ import { MuiCard } from './components/MuiCard'
 import { MuiCheckbox } from './components/MuiCheckbox'
 import { MuiImageList } from './components/MuiImageList'
 import { MuiLayout } from './components/MuiLayout'
+import { MuiLink } from './components/MuiLink'
 import { MuiNavbar } from './components/MuiNavbar'
 import { MuiRadioButton } from './components/MuiRadioButton'
 import { MuiRaiting } from './components/MuiRaiting'
@@ -60,6 +61,7 @@ function App() {
          <hr />
          <h5>NABVAR</h5> */}
          <MuiNavbar />
+         <MuiLink />
       
     </>
   )
