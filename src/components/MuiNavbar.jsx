@@ -6,7 +6,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const MuiNavbar = () => {
 const [anchorEl, setAnchorEl] = useState(null)
-const open = anchorEl;
+const open = anchorEl?true:false;
 const handleClick = (e) => {
   setAnchorEl(e.currentTarget);
 }
